@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export class AuthServices {
-    static serverURL = "http://localhost:4000"; 
+    static serverURL = "http://localhost:3000"; 
 
     static register(user) {
         const dataURL = `${this.serverURL}/register`;

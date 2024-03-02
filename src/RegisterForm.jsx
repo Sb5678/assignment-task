@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 import { AuthServices } from './AuthServices';
 import './RegistrationForm.css'; 
+import axios from 'axios';
 
 const RegistrationForm = () => {
     const [formData, setFormData] = useState({
@@ -9,15 +10,15 @@ const RegistrationForm = () => {
         email: '',
         password: ''
     });
-
+    const serverURL = "http://localhost:3000/users";
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
     const handleSubmit = async (e) => {
-        e.preventDefault();
+
         try {
-            const response = await AuthServices.register(formData);
+            const response = await axios.post(serverURL, formData);
             console.log(response.data);
         } catch (error) {
             console.error('Registration failed:', error);
