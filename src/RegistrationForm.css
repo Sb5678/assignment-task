@@ -1,0 +1,22 @@
+/* RegistrationForm.css */
+
+.custom-form {
+    background-color: #343a40; 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.center-label {
+    text-align: center;
+    color: white;
+}
+
+.email-input,
+.password-input {
+    color: white;
+}
+
+.register-button {
+    margin-top: 20px; 
+    text-align: center; 
+}

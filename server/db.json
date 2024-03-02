@@ -1,0 +1,29 @@
+{
+    "users": [
+        {
+            "name":"Jay",
+            "email":"jay@gmail.com",
+            "password":"Jay@123"
+        },
+        {
+            "name":"Ajay",
+            "email":"ajay@gmail.com",
+            "password":"Ajay@123"
+        },
+        {
+            "name":"Viay",
+            "email":"vijay@gmail.com",
+            "password":"Viay@123"
+        },
+        {
+            "name":"Sanjay",
+            "email":"sanjay@gmail.com",
+            "password":"Sanjay@123"
+        },
+        {
+            "name":"Dhananjay",
+            "email":"dhananjay@gmail.com",
+            "password":"Dhananjay@123"
+        }
+    ]
+  }
